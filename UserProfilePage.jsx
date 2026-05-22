@@ -30,7 +30,7 @@ export default function UserProfilePage() {
   return (
     <div className="page-container">
       <main>
-        {/* Profile header */}
+        
         <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', overflow: 'hidden', marginBottom: 20 }}>
           <div style={{ height: 80, background: `linear-gradient(135deg, ${hashColor(user.username)} 0%, ${hashColor(user.username + '2')} 100%)` }} />
           <div style={{ padding: '0 20px 20px', display: 'flex', alignItems: 'flex-end', gap: 16 }}>
@@ -44,7 +44,7 @@ export default function UserProfilePage() {
           </div>
         </div>
 
-        {/* Stats row */}
+        
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginBottom: 20 }}>
           {[
             ['Posts', userPosts.length],
@@ -58,7 +58,7 @@ export default function UserProfilePage() {
           ))}
         </div>
 
-        {/* Tabs */}
+        
         <div className="tabs">
           <button className={`tab ${tab === 'posts' ? 'active' : ''}`} onClick={() => setTab('posts')}>
             Posts ({userPosts.length})
