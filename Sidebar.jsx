@@ -43,7 +43,7 @@ export default function Sidebar() {
           </div>
         </div>
 
-        {/* Top communities */}
+        
         <div className="sidebar-card">
           <div className="sidebar-card-header">Top Communities</div>
           <div className="sidebar-card-body" style={{ padding: '8px 16px' }}>
@@ -64,7 +64,7 @@ export default function Sidebar() {
           </div>
         </div>
 
-        {/* Footer links */}
+        
         <div style={{ padding: '12px 4px', fontSize: 12, color: 'var(--text-muted)', lineHeight: 2 }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0 12px' }}>
             {['Help','About','Careers','Press','Blog','Rules','Privacy','Terms'].map(l => (
