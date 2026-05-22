@@ -79,7 +79,7 @@ export default function PostDetailPage() {
     <>
       <div className="page-container">
         <main>
-          {/* Breadcrumb */}
+          
           {community && (
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16, fontSize: 13 }}>
               <div className="community-dot" style={{ background: communityColor, width: 20, height: 20, fontSize: 10 }}>
@@ -91,7 +91,7 @@ export default function PostDetailPage() {
             </div>
           )}
 
-          {/* Post */}
+          
           <div className="post-detail">
             <div style={{ display: 'flex' }}>
               {/* Vote bar */}
@@ -103,7 +103,7 @@ export default function PostDetailPage() {
                 <button className={`vote-btn ${userVote === 'down' ? 'downvoted' : ''}`} onClick={() => vote(postId, 'post', 'down')}>▼</button>
               </div>
 
-              {/* Content */}
+
               <div style={{ flex: 1, padding: '16px 20px' }}>
                 <div className="post-meta" style={{ marginBottom: 12 }}>
                   <span style={{ color: 'var(--text-muted)' }}>Posted by u/{post.authorName}</span>
@@ -139,7 +139,7 @@ export default function PostDetailPage() {
             </div>
           </div>
 
-          {/* Comment form */}
+          
           <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', padding: '16px 20px', marginTop: 16 }}>
             {currentUser ? (
               <form onSubmit={handleComment}>
@@ -171,7 +171,7 @@ export default function PostDetailPage() {
             )}
           </div>
 
-          {/* Comments */}
+          
           <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', padding: '16px 20px', marginTop: 12 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16, borderBottom: '1px solid var(--border)', paddingBottom: 12 }}>
               <span style={{ fontSize: 15, fontWeight: 600, fontFamily: 'var(--font-display)' }}>{comments.length} comments</span>
@@ -193,7 +193,7 @@ export default function PostDetailPage() {
           </div>
         </main>
 
-        {/* Sidebar */}
+        
         <aside className="sidebar">
           {community && (
             <div className="sidebar-card">
