@@ -168,15 +168,15 @@ export function AppProvider({ children }) {
     let delta = 0;
 
     if (current === direction) {
-      // undo vote
+      
       delta = direction === 'up' ? -1 : 1;
       setVotes(prev => { const n = {...prev}; delete n[key]; return n; });
     } else if (current) {
-      // flip vote
+      
       delta = direction === 'up' ? 2 : -2;
       setVotes(prev => ({ ...prev, [key]: direction }));
     } else {
-      // new vote
+      
       delta = direction === 'up' ? 1 : -1;
       setVotes(prev => ({ ...prev, [key]: direction }));
     }
